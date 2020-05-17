@@ -3,7 +3,13 @@ package calc
 
 // returns sum of the two integers
 
-func Add(i int, j int) int {
+func Add(numbers ...int) int {
+      
+      	sum := 0
+	for _, num := range numbers{
 
-	return i+j
+        sum = sum + num
+        }
+
+	return sum
 }
